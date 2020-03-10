@@ -1,3 +1,3 @@
 discord.py==1.3.2
-requests.py==1.25.8
+requests.py==2.23.0
 async.py==0.6.2
