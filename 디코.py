@@ -1,6 +1,7 @@
 import requests
 import discord
 import asyncio
+import os
 from json import loads
 
 client = discord.Client()
@@ -51,5 +52,7 @@ async def on_message(message):
         await message.channel.send("에엣~? 와타시..?///")
     if message.content == "$선생님":
         await message.channel.send("<@266128710908903425> 선생님!!! 빨리 오세요!!!")
-
-client.run("Njg2OTcyMTM3MjQ0MDY1ODA2.Xme_BA.R5Q7pNA9qsKYoR7c2b5w9oga8Ys")
+        
+        
+access_token = os.environ["BOT_TOKEN"]
+client.run("access_token")
